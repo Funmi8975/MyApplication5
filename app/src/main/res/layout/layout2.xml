@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background ="@drawable/heart"
+tools:context=".App2Activity"
+android:transitionGroup="true">
+
+<TextView android:text="Connect to Bluetooth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textview"
+    android:textSize="35dp"
+    android:textColor="#FFFFFF"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+    
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginRight="-30dp"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView"
+        android:clickable="true"
+        android:onClick="on"
+        android:text="Turn On" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="-81dp"
+        android:onClick="visible"
+        android:text="Get visible" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="144dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:onClick="list"
+        android:text="List devices" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="238dp"
+        android:layout_marginTop="-53dp"
+        android:onClick="off"
+        android:text="turn off" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="379dp"
+        android:layout_marginLeft="379dp"
+        android:layout_marginBottom="-138dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/listView"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_marginStart="-355dp"
+        android:layout_marginLeft="-355dp"
+        android:layout_marginTop="161dp"
+        android:text="Paired devices:"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+</RelativeLayout>
